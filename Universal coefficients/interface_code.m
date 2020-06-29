@@ -47,7 +47,7 @@ Return[tableOutput];
 (*Universal structures for L(P-Subscript[W, 0]-Subscript[W, 1]-V-A) terms:*)
 
 
-(* ::Subsubsection::Closed:: *)
+(* ::Subsubsection:: *)
 (*P-V-A*)
 
 
@@ -63,14 +63,14 @@ info=List[
 	}
 ,
 {Style["O(VA)",fontHV],
-	Button[ToExpression["VA^3",TeXForm],NotebookLocate["VA"],Background->LightCyan],
-	Button[ToExpression["V^2A^2",TeXForm],NotebookLocate["VA"],Background->LightCyan],
-	Button[ToExpression["V^3A",TeXForm],NotebookLocate["VA"],Background->LightCyan],
-	Button[ToExpression["VA^5",TeXForm],NotebookLocate["VA"],Background->LightCyan],
-	Button[ToExpression["V^2A^4",TeXForm],NotebookLocate["VA"],Background->LightCyan],
-	Button[ToExpression["V^3A^3",TeXForm],NotebookLocate["VA"],Background->LightCyan],
-	Button[ToExpression["V^4A^2",TeXForm],NotebookLocate["VA"],Background->LightCyan],
-	Button[ToExpression["V^5A",TeXForm],NotebookLocate["VA"],Background->LightCyan]
+	Button[ToExpression["VA^3",TeXForm],NotebookLocate["VA3"],Background->LightCyan],
+	Button[ToExpression["V^2A^2",TeXForm],NotebookLocate["V2A2"],Background->LightCyan],
+	Button[ToExpression["V^3A",TeXForm],NotebookLocate["V3A"],Background->LightCyan],
+	Button[ToExpression["VA^5",TeXForm],NotebookLocate["VA5"],Background->LightCyan],
+	Button[ToExpression["V^2A^4",TeXForm],NotebookLocate["V2A4"],Background->LightCyan],
+	Button[ToExpression["V^3A^3",TeXForm],NotebookLocate["V3A3"],Background->LightCyan],
+	Button[ToExpression["V^4A^2",TeXForm],NotebookLocate["V4A2"],Background->LightCyan],
+	Button[ToExpression["V^5A",TeXForm],NotebookLocate["V5A"],Background->LightCyan]
 	}
 ,
 {Style["O(PV)",fontHV],
@@ -257,7 +257,7 @@ Return[tableOutput];
 ];
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*P-A-V-Subscript[W, 0]-Subscript[W, 1]*)
 
 
