@@ -1,6 +1,6 @@
 (* ::Package:: *)
 
-(* ::Subsection::Closed:: *)
+(* ::Subsection:: *)
 (*Universal structures for L(P-Subscript[W, 0]-Subscript[W, 1]) terms:*)
 
 
@@ -119,7 +119,7 @@ Return[tableOutput];
 ];
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*P-V-Subscript[W, 0]-Subscript[W, 1]*)
 
 
@@ -129,55 +129,56 @@ fontHV = FontFamily->"Helvetica";
 
 info=List[
 {Style["O(V \!\(\*SubscriptBox[\(W\), \(0\)]\))",fontHV],
-	Button["",NotebookLocate["VW0"],Background->LightCyan],
-	Button["",NotebookLocate["VW0"],Background->LightCyan],
-	Button["",NotebookLocate["VW0"],Background->LightCyan],
-	Button["",NotebookLocate["VW0"],Background->LightCyan],
-	Button["",NotebookLocate["VW0"],Background->LightCyan]
+	Button[ToExpression["V^2W_0^2",TeXForm],NotebookLocate["VW0"],Background->LightCyan],
+	Button[ToExpression["V^2W_0^3",TeXForm],NotebookLocate["VW0"],Background->LightCyan],
+	Button[ToExpression["V^4W_0",TeXForm],NotebookLocate["VW0"],Background->LightCyan],
+	Button[ToExpression["V^2W_0^4",TeXForm],NotebookLocate["VW0"],Background->LightCyan],
+	Button[ToExpression["V^4W_0^2",TeXForm],NotebookLocate["VW0"],Background->LightCyan]
 	}
 ,
 {Style["O(V \!\(\*SubscriptBox[\(W\), \(1\)]\))",fontHV],
-	Button["",NotebookLocate["VW1"],Background->LightCyan],
-	Button["",NotebookLocate["VW1"],Background->LightCyan],
-	Button["",NotebookLocate["VW1"],Background->LightCyan],
-	Button["",NotebookLocate["VW1"],Background->LightCyan]
+	Button[ToExpression["V^2W_1^2",TeXForm],NotebookLocate["VW1"],Background->LightCyan],
+	Button[ToExpression["V^4W_1",TeXForm],NotebookLocate["VW1"],Background->LightCyan],
+	Button[ToExpression["V^2W_1^4",TeXForm],NotebookLocate["VW1"],Background->LightCyan],
+	Button[ToExpression["V^4W_1^2",TeXForm],NotebookLocate["VW1"],Background->LightCyan]
 	}
 ,
 {Style["O(V \!\(\*SubscriptBox[\(W\), \(0\)]\)\!\(\*SubscriptBox[\(W\), \(1\)]\))",fontHV],
-	Button["",NotebookLocate["VW0W1"],Background->LightCyan],
-	Button["",NotebookLocate["VW0W1"],Background->LightCyan],
-	Button["",NotebookLocate["VW0W1"],Background->LightCyan]
+	Button[ToExpression["V^2W_0W_1^2",TeXForm],NotebookLocate["VW0W1"],Background->LightCyan],
+	Button[ToExpression["V^4W_1W_0",TeXForm],NotebookLocate["VW0W1"],Background->LightCyan],
+	Button[ToExpression["V^2W_0^2W_1^2",TeXForm],NotebookLocate["VW0W1"],Background->LightCyan]
 	}
 ,
 {Style["O(PV \!\(\*SubscriptBox[\(W\), \(0\)]\))",fontHV],
-	Button["",NotebookLocate["PVW0"],Background->LightCyan],
-	Button["",NotebookLocate["PVW0"],Background->LightCyan],
-	Button["",NotebookLocate["PVW0"],Background->LightCyan],
-	Button["",NotebookLocate["PVW0"],Background->LightCyan],
-	Button["",NotebookLocate["PVW0"],Background->LightCyan],
-	Button["",NotebookLocate["PVW0"],Background->LightCyan],
-	Button["",NotebookLocate["PVW0"],Background->LightCyan],
-	Button["",NotebookLocate["PVW0"],Background->LightCyan],
-	Button["",NotebookLocate["PVW0"],Background->LightCyan]
+	Button[ToExpression["PVW_0",TeXForm],NotebookLocate["PVW0"],Background->LightCyan],
+	Button[ToExpression["PVW_0^2",TeXForm],NotebookLocate["PVW0"],Background->LightCyan],
+	Button[ToExpression["PVW_0^3",TeXForm],NotebookLocate["PVW0"],Background->LightCyan],
+	Button[ToExpression["PVW_0^4",TeXForm],NotebookLocate["PVW0"],Background->LightCyan],
+	Button[ToExpression["PV^3W_0",TeXForm],NotebookLocate["PVW0"],Background->LightCyan],
+	Button[ToExpression["P^3VW_0",TeXForm],NotebookLocate["PVW0"],Background->LightCyan],
+	Button[ToExpression["P^2V^2W_0",TeXForm],NotebookLocate["PVW0"],Background->LightCyan],
+	Button[ToExpression["P^3VW_0^2",TeXForm],NotebookLocate["PVW0"],Background->LightCyan],
+	Button[ToExpression["PV^3W_0^2",TeXForm],NotebookLocate["PVW0"],Background->LightCyan],
+	Button[ToExpression["P^2V^2W_0^2",TeXForm],NotebookLocate["PVW0"],Background->LightCyan]
 	}
 ,
 {Style["O(PV \!\(\*SubscriptBox[\(W\), \(1\)]\))",fontHV],
-	Button["",NotebookLocate["PVW1"],Background->LightCyan],
-	Button["",NotebookLocate["PVW1"],Background->LightCyan],
-	Button["",NotebookLocate["PVW1"],Background->LightCyan],
-	Button["",NotebookLocate["PVW1"],Background->LightCyan],
-	Button["",NotebookLocate["PVW1"],Background->LightCyan],
-	Button["",NotebookLocate["PVW1"],Background->LightCyan],
-	Button["",NotebookLocate["PVW1"],Background->LightCyan],
-	Button["",NotebookLocate["PVW1"],Background->LightCyan]
+	Button[ToExpression["PVW_1^2",TeXForm],NotebookLocate["PVW1"],Background->LightCyan],
+	Button[ToExpression["PVW_1^4",TeXForm],NotebookLocate["PVW1"],Background->LightCyan],
+	Button[ToExpression["PV^3W_1",TeXForm],NotebookLocate["PVW1"],Background->LightCyan],
+	Button[ToExpression["P^3VW_1",TeXForm],NotebookLocate["PVW1"],Background->LightCyan],
+	Button[ToExpression["P^2V^2W_1",TeXForm],NotebookLocate["PVW1"],Background->LightCyan],
+	Button[ToExpression["PV^3W_1^2",TeXForm],NotebookLocate["PVW1"],Background->LightCyan],
+	Button[ToExpression["P^3VW_1^2",TeXForm],NotebookLocate["PVW1"],Background->LightCyan],
+	Button[ToExpression["P^2V^2W_1^2",TeXForm],NotebookLocate["PVW1"],Background->LightCyan]
 	}
 ,
 {Style["O(PV \!\(\*SubscriptBox[\(W\), \(0\)]\)\!\(\*SubscriptBox[\(W\), \(1\)]\))",fontHV],
-	Button["",NotebookLocate["PVW0W1"],Background->LightCyan],
-	Button["",NotebookLocate["PVW0W1"],Background->LightCyan],
-	Button["",NotebookLocate["PVW0W1"],Background->LightCyan],
-	Button["",NotebookLocate["PVW0W1"],Background->LightCyan],
-	Button["",NotebookLocate["PVW0W1"],Background->LightCyan]
+	Button[ToExpression["PVW_0W_1^2",TeXForm],NotebookLocate["PVW0W1"],Background->LightCyan],
+	Button[ToExpression["PVW_0^2W_1^2",TeXForm],NotebookLocate["PVW0W1"],Background->LightCyan],
+	Button[ToExpression["P^3VW_0W_1",TeXForm],NotebookLocate["PVW0W1"],Background->LightCyan],
+	Button[ToExpression["P^2V^2W_0W_1",TeXForm],NotebookLocate["PVW0W1"],Background->LightCyan],
+	Button[ToExpression["PV^3W_0W_1",TeXForm],NotebookLocate["PVW0W1"],Background->LightCyan]
 	}
 ];
 
@@ -189,70 +190,139 @@ Return[tableOutput];
 
 
 (* ::Subsubsection::Closed:: *)
-(*Axial-only*)
+(*P-A-Subscript[W, 0]-Subscript[W, 1]*)
 
 
-outputPW0W1A[]:=Block[{info,fontHV,tableOutput},
+outputPAW0W1[]:=Block[{info,fontHV,tableOutput},
 
 fontHV = FontFamily->"Helvetica";
 
 info=List[
-{Style["Pure A",fontHV],Button["O(\!\(\*SuperscriptBox[\(A\), \(2\)]\),\!\(\*SuperscriptBox[\(A\), \(4\)]\),\!\(\*SuperscriptBox[\(A\), \(6\)]\))",NotebookLocate["pureA"],Background->LightCyan]}
+
+{Style["O(A \!\(\*SubscriptBox[\(W\), \(0\)]\))",fontHV],
+	Button[ToExpression["A^2W_0^2",TeXForm],NotebookLocate["AW0"],Background->LightCyan],
+	Button[ToExpression["A^2W_0^3",TeXForm],NotebookLocate["AW0"],Background->LightCyan],
+	Button[ToExpression["A^4W_0",TeXForm],NotebookLocate["AW0"],Background->LightCyan],
+	Button[ToExpression["A^2W_0^4",TeXForm],NotebookLocate["AW0"],Background->LightCyan],
+	Button[ToExpression["A^4W_0^2",TeXForm],NotebookLocate["AW0"],Background->LightCyan]
+	}
 ,
-{Style["P-A",fontHV]}
+{Style["O(A \!\(\*SubscriptBox[\(W\), \(1\)]\))",fontHV],
+	Button[ToExpression["A^2W_1^2",TeXForm],NotebookLocate["AW1"],Background->LightCyan],
+	Button[ToExpression["A^4W_1",TeXForm],NotebookLocate["AW1"],Background->LightCyan],
+	Button[ToExpression["A^2W_1^4",TeXForm],NotebookLocate["AW1"],Background->LightCyan],
+	Button[ToExpression["A^4W_1^2",TeXForm],NotebookLocate["AW1"],Background->LightCyan]
+	}
 ,
-{Style["A-\!\(\*SubscriptBox[\(W\), \(0\)]\)",fontHV]}
+{Style["O(A \!\(\*SubscriptBox[\(W\), \(0\)]\)\!\(\*SubscriptBox[\(W\), \(1\)]\))",fontHV],
+	Button[ToExpression["A^2W_0W_1^2",TeXForm],NotebookLocate["AW0W1"],Background->LightCyan],
+	Button[ToExpression["A^4W_1W_0",TeXForm],NotebookLocate["AW0W1"],Background->LightCyan],
+	Button[ToExpression["A^2W_0^2W_1^2",TeXForm],NotebookLocate["AW0W1"],Background->LightCyan]
+	}
 ,
-{Style["A-\!\(\*SubscriptBox[\(W\), \(1\)]\)",fontHV]}
+{Style["O(PA \!\(\*SubscriptBox[\(W\), \(0\)]\))",fontHV],
+	Button[ToExpression["PA^3W_0",TeXForm],NotebookLocate["PAW0"],Background->LightCyan],
+	Button[ToExpression["P^3AW_0",TeXForm],NotebookLocate["PAW0"],Background->LightCyan],
+	Button[ToExpression["P^2A^2W_0",TeXForm],NotebookLocate["PAW0"],Background->LightCyan],
+	Button[ToExpression["P^3AW_0^2",TeXForm],NotebookLocate["PAW0"],Background->LightCyan],
+	Button[ToExpression["PA^3W_0^2",TeXForm],NotebookLocate["PAW0"],Background->LightCyan],
+	Button[ToExpression["P^2A^2W_0^2",TeXForm],NotebookLocate["PAW0"],Background->LightCyan]
+	}
 ,
-{Style["A-\!\(\*SubscriptBox[\(W\), \(0\)]\)-\!\(\*SubscriptBox[\(W\), \(1\)]\)",fontHV]}
+{Style["O(PA \!\(\*SubscriptBox[\(W\), \(1\)]\))",fontHV],
+	Button[ToExpression["PAW_1",TeXForm],NotebookLocate["PAW1"],Background->LightCyan],
+	Button[ToExpression["PAW_1^3",TeXForm],NotebookLocate["PAW1"],Background->LightCyan],
+	Button[ToExpression["PA^3W_1",TeXForm],NotebookLocate["PAW1"],Background->LightCyan],
+	Button[ToExpression["P^3AW_1",TeXForm],NotebookLocate["PAW1"],Background->LightCyan],
+	Button[ToExpression["P^2A^2W_1",TeXForm],NotebookLocate["PAW1"],Background->LightCyan],
+	Button[ToExpression["PA^3W_1^2",TeXForm],NotebookLocate["PAW1"],Background->LightCyan],
+	Button[ToExpression["P^3AW_1^2",TeXForm],NotebookLocate["PAW1"],Background->LightCyan],
+	Button[ToExpression["P^2A^2W_1^2",TeXForm],NotebookLocate["PAW1"],Background->LightCyan]
+	}
 ,
-{Style["P-A-\!\(\*SubscriptBox[\(W\), \(0\)]\)",fontHV]}
-,
-{Style["P-A-\!\(\*SubscriptBox[\(W\), \(1\)]\)",fontHV]}
-,
-{Style["P-A-\!\(\*SubscriptBox[\(W\), \(0\)]\)-\!\(\*SubscriptBox[\(W\), \(1\)]\)",fontHV]}
+{Style["O(PA \!\(\*SubscriptBox[\(W\), \(0\)]\)\!\(\*SubscriptBox[\(W\), \(1\)]\))",fontHV],
+	Button[ToExpression["PAW_0W_1",TeXForm],NotebookLocate["PAW0W1"],Background->LightCyan],
+	Button[ToExpression["PAW_0^2W_1",TeXForm],NotebookLocate["PAW0W1"],Background->LightCyan],
+	Button[ToExpression["PAW_0W_1^3",TeXForm],NotebookLocate["PAW0W1"],Background->LightCyan],
+	Button[ToExpression["PAW_0^3W_1",TeXForm],NotebookLocate["PAW0W1"],Background->LightCyan],
+	Button[ToExpression["P^3AW_0W_1",TeXForm],NotebookLocate["PAW0W1"],Background->LightCyan],
+	Button[ToExpression["P^2A^2W_0W_1",TeXForm],NotebookLocate["PAW0W1"],Background->LightCyan],
+	Button[ToExpression["PA^3W_0W_1",TeXForm],NotebookLocate["PAW0W1"],Background->LightCyan]
+	}
 ];
 
-
-tableOutput=TableForm[info,TableHeadings->{Range[Length[info]],{Style["Building Blocks",fontHV,Red,FontSize->13],Style["Universal Structures",fontHV,Red,FontSize->13]}},TableAlignments->{Center, Center},TableSpacing->{1.8,1.6}];
+tableOutput=TableForm[info,TableHeadings->{Range[Length[info]],{Style["Operator class",fontHV,Red,FontSize->13],Style["Non-vanishing structures",fontHV,Red,FontSize->13]}},TableAlignments->{Center, Center},TableSpacing->{1.8,1.6}];
 
 Return[tableOutput];
 ];
 
-(* The end of Axial terms *)
+
+(* ::Subsubsection:: *)
+(*P-A-V-Subscript[W, 0]-Subscript[W, 1]*)
 
 
-(* ::Subsubsection::Closed:: *)
-(*Mixed Vector-Axial*)
+outputPAVW0W1[]:=Block[{info,fontHV,tableOutput},
 
-
-outputPW0W1AV[]:=Block[{info,fontHV,tableOutput},
-
-fontHV=FontFamily->"Helvetica";
+fontHV = FontFamily->"Helvetica";
 
 info=List[
-{Style["V-A",fontHV]}
+
+{Style["O(A V \!\(\*SubscriptBox[\(W\), \(0\)]\))",fontHV],
+	Button[ToExpression["VA^3W_0",TeXForm],NotebookLocate["AVW0"],Background->LightCyan],
+	Button[ToExpression["V^3AW_0",TeXForm],NotebookLocate["AVW0"],Background->LightCyan],
+	Button[ToExpression["V^2A^2W_0",TeXForm],NotebookLocate["AVW0"],Background->LightCyan],
+	Button[ToExpression["V^3AW_0^2",TeXForm],NotebookLocate["AVW0"],Background->LightCyan],
+	Button[ToExpression["VA^3W_0^2",TeXForm],NotebookLocate["AVW0"],Background->LightCyan],
+	Button[ToExpression["V^2A^2W_0^2",TeXForm],NotebookLocate["AVW0"],Background->LightCyan]
+	}
 ,
-{Style["P-V-A",fontHV]}
+{Style["O(A V \!\(\*SubscriptBox[\(W\), \(1\)]\))",fontHV],
+	Button[ToExpression["VAW_1",TeXForm],NotebookLocate["AW1"],Background->LightCyan],
+	Button[ToExpression["VAW_1^3",TeXForm],NotebookLocate["AW1"],Background->LightCyan],
+	Button[ToExpression["VA^3W_1",TeXForm],NotebookLocate["AW1"],Background->LightCyan],
+	Button[ToExpression["V^2A^2W_1",TeXForm],NotebookLocate["AW1"],Background->LightCyan],
+	Button[ToExpression["VA^3W_1^2",TeXForm],NotebookLocate["AW1"],Background->LightCyan],
+	Button[ToExpression["V^3AW_1^2",TeXForm],NotebookLocate["AW1"],Background->LightCyan],
+	Button[ToExpression["V^2A^2W_1^2",TeXForm],NotebookLocate["AW1"],Background->LightCyan]
+	}
 ,
-{Style["V-A-\!\(\*SubscriptBox[\(W\), \(0\)]\)",fontHV]}
+{Style["O(A V \!\(\*SubscriptBox[\(W\), \(0\)]\)\!\(\*SubscriptBox[\(W\), \(1\)]\))",fontHV],
+	Button[ToExpression["VAW_0W_1",TeXForm],NotebookLocate["AVW0W1"],Background->LightCyan],
+	Button[ToExpression["VAW_0^2W_1",TeXForm],NotebookLocate["AVW0W1"],Background->LightCyan],
+	Button[ToExpression["VAW_0W_1^3",TeXForm],NotebookLocate["AVW0W1"],Background->LightCyan],
+	Button[ToExpression["VAW_0^3W_1",TeXForm],NotebookLocate["AVW0W1"],Background->LightCyan],
+	Button[ToExpression["V^3AW_0W_1",TeXForm],NotebookLocate["AVW0W1"],Background->LightCyan],
+	Button[ToExpression["VA^3W_0W_1",TeXForm],NotebookLocate["AVW0W1"],Background->LightCyan],
+	Button[ToExpression["V^2A^2W_0W_1",TeXForm],NotebookLocate["AVW0W1"],Background->LightCyan]
+	}
 ,
-{Style["V-A-\!\(\*SubscriptBox[\(W\), \(1\)]\)",fontHV]}
+{Style["O(PAV \!\(\*SubscriptBox[\(W\), \(0\)]\))",fontHV],
+	Button[ToExpression["PAV^2W_0",TeXForm],NotebookLocate["PAVW0"],Background->LightCyan],
+	Button[ToExpression["PAV^2W_0^2",TeXForm],NotebookLocate["PAVW0"],Background->LightCyan],
+	Button[ToExpression["PA^2VW_0",TeXForm],NotebookLocate["PAVW0"],Background->LightCyan],
+	Button[ToExpression["PA^2VW_0^2",TeXForm],NotebookLocate["PAVW0"],Background->LightCyan],
+	Button[ToExpression["P^2AVW_0",TeXForm],NotebookLocate["PAVW0"],Background->LightCyan],
+	Button[ToExpression["P^2AVW_0^2",TeXForm],NotebookLocate["PAVW0"],Background->LightCyan]
+	}
 ,
-{Style["V-A-\!\(\*SubscriptBox[\(W\), \(0\)]\)-\!\(\*SubscriptBox[\(W\), \(1\)]\)",fontHV]}
+{Style["O(PAV \!\(\*SubscriptBox[\(W\), \(1\)]\))",fontHV],
+	Button[ToExpression["PAV^2W_1",TeXForm],NotebookLocate["PAVW1"],Background->LightCyan],
+	Button[ToExpression["PAV^2W_1^2",TeXForm],NotebookLocate["PAVW1"],Background->LightCyan],
+	Button[ToExpression["PA^2VW_1",TeXForm],NotebookLocate["PAVW1"],Background->LightCyan],
+	Button[ToExpression["PA^2VW_1^2",TeXForm],NotebookLocate["PAVW1"],Background->LightCyan],
+	Button[ToExpression["P^2AVW_1",TeXForm],NotebookLocate["PAVW1"],Background->LightCyan],
+	Button[ToExpression["P^2AVW_1^2",TeXForm],NotebookLocate["PAVW1"],Background->LightCyan]
+	}
 ,
-{Style["P-V-A-\!\(\*SubscriptBox[\(W\), \(0\)]\)",fontHV]}
-,
-{Style["P-V-A-\!\(\*SubscriptBox[\(W\), \(1\)]\)",fontHV]}
-,
-{Style["P-V-A-\!\(\*SubscriptBox[\(W\), \(0\)]\)-\!\(\*SubscriptBox[\(W\), \(1\)]\)",fontHV]}
+{Style["O(PAV \!\(\*SubscriptBox[\(W\), \(0\)]\)\!\(\*SubscriptBox[\(W\), \(1\)]\))",fontHV],
+	Button[ToExpression["PAV^2W_0W_1",TeXForm],NotebookLocate["PAVW0W1"],Background->LightCyan],
+	Button[ToExpression["PA^2VW_0W_1",TeXForm],NotebookLocate["PAVW0W1"],Background->LightCyan],
+	Button[ToExpression["P^2AVW_0W_1",TeXForm],NotebookLocate["PAVW0W1"],Background->LightCyan]
+	}
+
 ];
 
-
-tableOutput=TableForm[info,TableHeadings->{Range[Length[info]],{Style["Building Blocks",fontHV,Red,FontSize->13],Style["Universal Structures",fontHV,Red,FontSize->13]}},TableAlignments->{Center, Center},TableSpacing->{1.8,1.6}];
+tableOutput=TableForm[info,TableHeadings->{Range[Length[info]],{Style["Operator class",fontHV,Red,FontSize->13],Style["Non-vanishing structures",fontHV,Red,FontSize->13]}},TableAlignments->{Center, Center},TableSpacing->{1.8,1.6}];
 
 Return[tableOutput];
 ];
-
-(* The end of Vector-Axial *)
