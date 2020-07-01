@@ -151,9 +151,9 @@ info=List[
 ,
 {Style["O(PV \!\(\*SubscriptBox[\(W\), \(0\)]\))",fontHV],
 	Button[ToExpression["PVW_0",TeXForm],NotebookLocate["PVW0"],Background->LightCyan],
-	Button[ToExpression["PVW_0^2",TeXForm],NotebookLocate["PVW02"],Background->LightCyan],
-	Button[ToExpression["PVW_0^3",TeXForm],NotebookLocate["PVW03"],Background->LightCyan],
-	Button[ToExpression["PVW_0^4",TeXForm],NotebookLocate["PVW04"],Background->LightCyan],
+	Button[ToExpression["PVW_0^2",TeXForm],NotebookLocate["PVW0"],Background->LightCyan],
+	Button[ToExpression["PVW_0^3",TeXForm],NotebookLocate["PVW0"],Background->LightCyan],
+	Button[ToExpression["PVW_0^4",TeXForm],NotebookLocate["PVW0"],Background->LightCyan],
 	Button[ToExpression["PV^3W_0",TeXForm],NotebookLocate["PV3W0"],Background->LightCyan],
 	Button[ToExpression["P^3VW_0",TeXForm],NotebookLocate["P3VW0"],Background->LightCyan],
 	Button[ToExpression["P^2V^2W_0",TeXForm],NotebookLocate["P2V2W0"],Background->LightCyan],
@@ -163,8 +163,8 @@ info=List[
 	}
 ,
 {Style["O(PV \!\(\*SubscriptBox[\(W\), \(1\)]\))",fontHV],
-	Button[ToExpression["PVW_1^2",TeXForm],NotebookLocate["PVW12"],Background->LightCyan],
-	Button[ToExpression["PVW_1^4",TeXForm],NotebookLocate["PVW14"],Background->LightCyan],
+	Button[ToExpression["PVW_1^2",TeXForm],NotebookLocate["PVW1"],Background->LightCyan],
+	Button[ToExpression["PVW_1^4",TeXForm],NotebookLocate["PVW1"],Background->LightCyan],
 	Button[ToExpression["PV^3W_1",TeXForm],NotebookLocate["PV3W1"],Background->LightCyan],
 	Button[ToExpression["P^3VW_1",TeXForm],NotebookLocate["P3VW1"],Background->LightCyan],
 	Button[ToExpression["P^2V^2W_1",TeXForm],NotebookLocate["P2V2W1"],Background->LightCyan],
@@ -189,7 +189,7 @@ Return[tableOutput];
 ];
 
 
-(* ::Subsubsection::Closed:: *)
+(* ::Subsubsection:: *)
 (*P-A-Subscript[W, 0]-Subscript[W, 1]*)
 
 
@@ -231,7 +231,7 @@ info=List[
 ,
 {Style["O(PA \!\(\*SubscriptBox[\(W\), \(1\)]\))",fontHV],
 	Button[ToExpression["PAW_1",TeXForm],NotebookLocate["PAW1"],Background->LightCyan],
-	Button[ToExpression["PAW_1^3",TeXForm],NotebookLocate["PAW13"],Background->LightCyan],
+	Button[ToExpression["PAW_1^3",TeXForm],NotebookLocate["PAW1"],Background->LightCyan],
 	Button[ToExpression["PA^3W_1",TeXForm],NotebookLocate["PA3W1"],Background->LightCyan],
 	Button[ToExpression["P^3AW_1",TeXForm],NotebookLocate["P3AW1"],Background->LightCyan],
 	Button[ToExpression["P^2A^2W_1",TeXForm],NotebookLocate["P2A2W1"],Background->LightCyan],
@@ -257,7 +257,7 @@ Return[tableOutput];
 ];
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*P-A-V-Subscript[W, 0]-Subscript[W, 1]*)
 
 
