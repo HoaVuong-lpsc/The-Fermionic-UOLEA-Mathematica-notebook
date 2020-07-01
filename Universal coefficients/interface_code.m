@@ -189,7 +189,7 @@ Return[tableOutput];
 ];
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*P-A-Subscript[W, 0]-Subscript[W, 1]*)
 
 
@@ -257,7 +257,7 @@ Return[tableOutput];
 ];
 
 
-(* ::Subsubsection::Closed:: *)
+(* ::Subsubsection:: *)
 (*P-A-V-Subscript[W, 0]-Subscript[W, 1]*)
 
 
@@ -278,7 +278,7 @@ info=List[
 ,
 {Style["O(A V \!\(\*SubscriptBox[\(W\), \(1\)]\))",fontHV],
 	Button[ToExpression["VAW_1",TeXForm],NotebookLocate["VAW1"],Background->LightCyan],
-	Button[ToExpression["VAW_1^3",TeXForm],NotebookLocate["VAW13"],Background->LightCyan],
+	Button[ToExpression["VAW_1^3",TeXForm],NotebookLocate["VAW1"],Background->LightCyan],
 	Button[ToExpression["VA^3W_1",TeXForm],NotebookLocate["VA3W1"],Background->LightCyan],
 	Button[ToExpression["V^2A^2W_1",TeXForm],NotebookLocate["V2A2W1"],Background->LightCyan],
 	Button[ToExpression["VA^3W_1^2",TeXForm],NotebookLocate["VA3W12"],Background->LightCyan],
